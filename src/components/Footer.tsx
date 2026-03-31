@@ -1,0 +1,15 @@
+import { Link } from 'react-router-dom'
+
+export default function Footer() {
+  return (
+    <footer>
+      <hr />
+      <a href="https://github.com/isteiger">GitHub</a> |{' '}
+      <a href="https://webpages.charlotte.edu/isteiger">CLT Web</a> |{' '}
+      <a href="https://isteiger.github.io/">GitHub.io</a> |{' '}
+      <a href="https://www.freecodecamp.org/isteiger">freeCodeCamp</a> |{' '}
+      <a href="https://www.linkedin.com/in/isteiger">LinkedIn</a>
+      <p>Page designed by <Link to="/isteigerdesign">isteigerDesign</Link>, certified in Responsive Web Design</p>
+    </footer>
+  )
+}

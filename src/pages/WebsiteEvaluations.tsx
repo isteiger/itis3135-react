@@ -1,0 +1,25 @@
+export default function WebsiteEvaluations() {
+  return (
+    <main>
+      <h2>Website Evaluations</h2>
+      <section>
+        <h3><a href="https://paymore.com">PayMore Stores (My Employer)</a></h3>
+        <ul>
+          <li><strong>Contrast:</strong> Contrast is created with the green gradient to the white background, bringing attention to the top element, highlighting what they do. Pretty good.</li>
+          <li><strong>Repetition:</strong> The color green is repeated to create a cohesive look throughout the site. They reiterate that they are trusted and the best place to get cash for your products, hammering in that point.</li>
+          <li><strong>Alignment:</strong> Mostly everything is aligned well, creating a clean and organized appearance. There are some issues though, such as the brand carousel not being aligned right to the width of the cards below, or the extra left padding on the footer links.</li>
+          <li><strong>Proximity:</strong> Elements that have to do with each other are properly placed together, such as having categories they purchase with their old tech card.</li>
+        </ul>
+      </section>
+      <section>
+        <h3><a href="https://www.customconfections.net/">Cheescakes by Custom Confections (Former Employer)</a></h3>
+        <ul>
+          <li><strong>Contrast:</strong> The text is hard to read in some places. The yellow text with the cheesecake in the background is a good example.</li>
+          <li><strong>Repetition:</strong> Nothing is really repeated, the design is different on every page, and it's not very good.</li>
+          <li><strong>Alignment:</strong> I mean, I guess everything is aligned? Everything is center aligned, and that is consistent, the one good thing this site does.</li>
+          <li><strong>Proximity:</strong> It's a mess. Elements are too big, such a photos, so you can't tell what goes to what, it's awful I can't lie. The titles do go with the content though, but any picture is just miles away from everything.</li>
+        </ul>
+      </section>
+    </main>
+  )
+}

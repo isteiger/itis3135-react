@@ -1,0 +1,171 @@
+export default function Instructions() {
+  return (
+    <>
+      <style>{`
+        .doc-container {
+          display: flex;
+          max-width: 1200px;
+          margin: 20px auto;
+          border: 2px solid #3498db;
+          border-radius: 8px;
+          overflow: hidden;
+          min-height: 600px;
+          background: white;
+        }
+        #doc-navbar {
+          width: 250px;
+          background-color: #2c3e50;
+          overflow-y: auto;
+          padding: 20px 0;
+          flex-shrink: 0;
+        }
+        #doc-navbar header {
+          color: #ecf0f1;
+          font-size: 1.2em;
+          font-weight: bold;
+          padding: 15px 20px;
+          border-bottom: 1px solid #34495e;
+          margin-bottom: 10px;
+          background: none;
+          max-width: none;
+        }
+        .nav-link {
+          display: block;
+          color: #bdc3c7;
+          text-decoration: none;
+          padding: 10px 20px;
+          border-bottom: 1px solid #34495e;
+        }
+        .nav-link:hover {
+          background-color: #34495e;
+          color: #ecf0f1;
+        }
+        #main-doc {
+          flex: 1;
+          padding: 30px;
+          overflow-y: auto;
+          max-height: 600px;
+        }
+        .main-section {
+          margin-bottom: 40px;
+        }
+        .main-section header {
+          font-size: 1.8em;
+          color: #2c3e50;
+          border-bottom: 2px solid #3498db;
+          padding-bottom: 8px;
+          margin-bottom: 16px;
+          background: none;
+          max-width: none;
+          font-family: inherit;
+        }
+        .main-section p {
+          line-height: 1.7;
+          color: #555;
+          margin-bottom: 12px;
+        }
+        .main-section code {
+          display: block;
+          background-color: #f4f4f4;
+          border-left: 4px solid #3498db;
+          padding: 12px 16px;
+          margin: 12px 0;
+          font-family: monospace;
+          white-space: pre;
+          overflow-x: auto;
+        }
+        .main-section ul {
+          padding-left: 25px;
+          margin: 12px 0;
+        }
+        .main-section li {
+          color: #555;
+          margin-bottom: 6px;
+          line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+          .doc-container { flex-direction: column; }
+          #doc-navbar { width: 100%; max-height: 200px; }
+          #main-doc { padding: 20px; }
+        }
+      `}</style>
+      <main>
+        <h2>Python Documentation</h2>
+        <div className="doc-container">
+          <nav id="doc-navbar">
+            <header>Contents</header>
+            <a className="nav-link" href="#Introduction">Introduction</a>
+            <a className="nav-link" href="#Getting_Started">Getting Started</a>
+            <a className="nav-link" href="#Data_Types">Data Types</a>
+            <a className="nav-link" href="#Control_Flow">Control Flow</a>
+            <a className="nav-link" href="#Functions">Functions</a>
+          </nav>
+          <div id="main-doc">
+            <section className="main-section" id="Introduction">
+              <header>Introduction</header>
+              <p>Python is a high-level, interpreted programming language known for its clear syntax and readability.</p>
+              <p>It was created by Guido van Rossum and first released in 1991.</p>
+              <p>Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.</p>
+              <p>Python is widely used in web development, data science, artificial intelligence, and automation.</p>
+              <p>Its design philosophy emphasizes code readability with the use of significant indentation.</p>
+              <code>{`print("Hello, World!")`}</code>
+              <ul>
+                <li>Easy to learn and read</li>
+                <li>Large standard library</li>
+                <li>Cross-platform compatibility</li>
+              </ul>
+            </section>
+            <section className="main-section" id="Getting_Started">
+              <header>Getting Started</header>
+              <p>To get started with Python, download it from the official website at python.org.</p>
+              <p>Python comes with an interactive shell called IDLE which you can use to run code immediately.</p>
+              <p>You can also use popular editors like VS Code, PyCharm, or Jupyter Notebooks.</p>
+              <code>{`python --version`}</code>
+              <code>{`python3 hello.py`}</code>
+              <ul>
+                <li>Install Python from python.org</li>
+                <li>Choose a text editor or IDE</li>
+              </ul>
+            </section>
+            <section className="main-section" id="Data_Types">
+              <header>Data Types</header>
+              <p>Python has several built-in data types including integers, floats, strings, booleans, lists, tuples, sets, and dictionaries.</p>
+              <p>Variables in Python are dynamically typed, meaning you don't need to declare the type explicitly.</p>
+              <p>Strings can be defined with single or double quotes and support many built-in methods.</p>
+              <code>{`x = 42\nname = "Python"\nis_cool = True\nnumbers = [1, 2, 3]`}</code>
+              <ul>
+                <li>int, float, complex</li>
+                <li>str, bytes</li>
+                <li>list, tuple, set, dict</li>
+              </ul>
+            </section>
+            <section className="main-section" id="Control_Flow">
+              <header>Control Flow</header>
+              <p>Python uses if, elif, and else statements for conditional execution of code.</p>
+              <p>Loops in Python include for loops, which iterate over sequences, and while loops that continue while a condition is true.</p>
+              <p>The break and continue statements can alter loop execution.</p>
+              <code>{`for i in range(5):\n    print(i)`}</code>
+              <ul>
+                <li>if / elif / else</li>
+                <li>for loops</li>
+                <li>while loops</li>
+              </ul>
+            </section>
+            <section className="main-section" id="Functions">
+              <header>Functions</header>
+              <p>Functions in Python are defined using the def keyword followed by the function name and parentheses.</p>
+              <p>Python supports default argument values, keyword arguments, and variable-length argument lists.</p>
+              <p>Lambda functions are small anonymous functions defined with the lambda keyword.</p>
+              <code>{`def greet(name="World"):\n    return f"Hello, {name}!"`}</code>
+              <ul>
+                <li>def keyword to define functions</li>
+                <li>return statement</li>
+                <li>lambda for anonymous functions</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
+    </>
+  )
+}
