@@ -16,6 +16,7 @@ import Highlight from './pages/Highlight'
 import CrappyPage from './pages/CrappyPage'
 import Hobby from './pages/Hobby'
 import IsteigerDesign from './pages/IsteigerDesign'
+import Slideshow from './pages/Slideshow'
 
 const pageTitles: Record<string, string> = {
   '/': 'Course Home',
@@ -32,6 +33,7 @@ const pageTitles: Record<string, string> = {
   '/product': 'Product',
   '/hobby': 'Hobby',
   '/isteigerdesign': 'isteigerDesign',
+  '/slideshow': 'Slideshow',
 }
 
 function TitleUpdater() {
@@ -72,6 +74,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/hobby" element={<Hobby />} />
         <Route path="/isteigerdesign" element={<IsteigerDesign />} />
+        <Route path="/slideshow" element={<Slideshow />} />
       </Routes>
       {!isStandalone && <Footer />}
     </>

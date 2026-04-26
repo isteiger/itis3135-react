@@ -15,7 +15,8 @@ export default function Header() {
         <Link to="/instructions">Instructions</Link> |{' '}
         <Link to="/highlight">Highlight</Link> |{' '}
         <Link to="/intro-form">Intro Form</Link> |{' '}
-        <Link to="/product">Product</Link>
+        <Link to="/product">Product</Link> |{' '}
+        <Link to="/slideshow">Slideshow</Link>
       </nav>
       <nav style={{ marginTop: '0.25rem', fontSize: '0.9em' }}>
         <Link to="/crappy-page">Crappy Page</Link> |{' '}
